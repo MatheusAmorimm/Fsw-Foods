@@ -12,6 +12,7 @@ CREATE TABLE "Restaurant" (
 -- CreateTable
 CREATE TABLE "Category" (
     "id" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "name" TEXT NOT NULL,
     "imageUrl" TEXT NOT NULL,
 
@@ -21,6 +22,7 @@ CREATE TABLE "Category" (
 -- CreateTable
 CREATE TABLE "Product" (
     "id" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "name" TEXT NOT NULL,
     "description" TEXT NOT NULL,
     "imageUrl" TEXT NOT NULL,
